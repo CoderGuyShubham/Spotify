@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="logo" src="logo.svg" alt="logo">
+        <img id="hamburger" src="hamburger.svg" alt="hamburger">
+        <div class="middle">
+            <button class="house">
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+            </button>
+            <div class="search-input-container">
+                <img class="search" src="search.svg" width="30px" alt="search">
+                <input type="search" placeholder="What do you want to play?">
+                <img class="browse" src="browse.svg" alt="browse">
+            </div>
+        </div>
+        <div class="login-signup">
+            <button class="sign-up">Sign up</button>
+            <button class="log-in">Log in</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="library-container">
+                <div class="left-lib">
+                    <img class="library" src="library.svg" alt="library">
+                <div class="lib-text">
+                    Your library
+                </div>
+                </div>
+                <div class="right-lib">
+                    <button class="plus">
+                        <img class="plus-icon" src="plus.svg" alt="plus">
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="plist-pdcast">
+                <div class="playlist">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button class="create-playlist">Create playlist</button>
+                </div>
+                <div class="podcast">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button class="browse-podcasts">Browse podcasts</button>
+                </div>
+            </div> -->
+            <div class="songLists">
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="menus">
+                <div class="first-three">
+                    <a href="#">Legal</a>
+                    <a href="#">Safety & Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="last-three">
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+                </div>
+                <a class="big-anchor" href="#">Cookies</a>
+                <button class="language-selector">
+                    <img class="globe" src="globe.svg" alt="globe">
+                    English
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="section1">
+                <div class="title-section">
+                    <a class="title" href="#">Popular artists</a>
+                    <a class="show-all" href="#">Show all</a>
+                </div>
+                <div class="card-section">
+                    <div class="card">
+                        <img class="card-image" src="s1p1.jpg" alt="s1p1">
+                        <a href="#"><h4>Pritam</h4></a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="s1p2.jpeg" alt="s1p2">
+                        <a href="#"><h4>A.R. Rahman</h4></a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="s1p3.jpg" alt="s1p3">
+                        <a href="#"><h4>Sachin-Jigar</h4></a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="s1p4.jpg" alt="s1p4">
+                        <a href="#"><h4>Arijit Singh</h4></a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="s1p5.jpg" alt="s1p5">
+                        <a href="#"><h4>Anirudh Ravichander</h4></a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="s1p6.jpg" alt="s1p6">
+                        <a href="#"><h4>Atif Aslam</h4></a>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="s1p7.jpg" alt="s1p7">
+                        <a href="#"><h4>Vishal Mishra</h4></a>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="title-section">
+                    <a class="title" href="#">Popular albums</a>
+                    <a class="show-all" href="#">Show all</a>
+                </div>
+                <div class="card-section">
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s2p1.jpg" alt="s2p1">
+                        <a href="#"><h4>GLORY</h4></a>
+                        <a href="#"><p>Yo Yo Honey Singh</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s2p2.jpg" alt="s2p2">
+                        <a href="#"><h4>Aashiqui 2</h4></a>
+                        <a href="#"><p>Mithoon,Ankit Tiwari,Jeet Gannguli</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s2p3.jpg" alt="s2p3">
+                        <a href="#"><h4>love hotel</h4></a>
+                        <a href="#"><p>leftovermax</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s2p4.jpg" alt="s2p4">
+                        <a href="#"><h4>Making Memories</h4></a>
+                        <a href="#"><p>Karan Aujla,Ikky</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s2p5.jpg" alt="s2p5">
+                        <a href="#"><h4>Aaj Ki Raat(From "Stree 2")</h4></a>
+                        <a href="#"><p>Sachin-Jigar,Amitabh Bhattacharya</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s2p6.jpg" alt="s2p6"3
+                        <a href="#"><h4>Yeh Jawaani Hai Deewani</h4></a>
+                        <a href="#"><p>Pritam</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s2p7.jpg" alt="s1p7">
+                        <a href="#"><h4>Jo Tum Mere Ho</h4></a>
+                        <a href="#"><p>Anuv Jain</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section3">
+                <div class="title-section">
+                    <a class="title" href="#">Popular radio</a>
+                    <a class="show-all" href="#">Show all</a>
+                </div>
+                <div class="card-section">
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s3p1.jpg" alt="s3p1">
+                        <a href="#"><p>With Atif Aslam, Vishal-Shekhar,...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s3p2.jpg" alt="s3p2">
+                        <a href="#"><p>With Pritam, Mohit Chauhan, Shaan...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s3p3.jpg" alt="s3p3">
+                        <a href="#"><p>With Karan Aujla, Shubh, Sidhu...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s3p4.jpg" alt="s3p4">
+                        <a href="#"><p>With Anirudh Ravichander, Harri...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s3p5.jpg" alt="s3p5">
+                        <a href="#"><p>With Diljit Dosanjh, Shubh, Sidhu... </p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s3p6.jpg" alt="s3p6">
+                        <a href="#"><p>With Guru Randhawa,...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s3p7.jpg" alt="s3p7">
+                        <a href="#"><p>With Pritam, KK, Mohit Chauhan an...</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section4">
+                <div class="title-section">
+                    <a class="title" href="#">Featured Charts</a>
+                </div>
+                <div class="card-section">
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s4p1.jpg" alt="s4p1">
+                        <a href="#"><p>Your weekly update of the most played..</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s4p2.jpg" alt="s4p2">
+                        <a href="#"><p>Your weekly update of the most played...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s4p3.jpg" alt="s4p3">
+                        <a href="#"><p>Your daily update of the most played...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s4p4.jpg" alt="s4p4">
+                        <a href="#"><p>Your daily update of the most played...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s4p5.jpg" alt="s4p5">
+                        <a href="#"><p>Your daily update of the most viral trac...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s4p6.jpg" alt="s4p6">
+                        <a href="#"><p>Your daily update of the most viral trac...</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section5">
+                <div class="title-section">
+                    <a class="title" href="#">Spotify Playlists</a>
+                    <a class="show-all" href="#">Show all</a>
+                </div>
+                <div class="card-section">
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s5p1.jpg" alt="s5p1">
+                        <a href="#"><p>Rock legends & epic songs that continu...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s5p2.jpg" alt="s5p2">
+                        <a href="#"><p>The biggest songs of the 2020s. Cove...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s5p3.jpg" alt="s5p3">
+                        <a href="#"><p>Just lean back and enjoy relaxed beats.</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s5p4.jpg" alt="s5p4">
+                        <a href="#"><p>chill beats, lofi vibes, new tracks...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s5p5.jpg" alt="s5p5">
+                        <a href="#"><p>The hottest 50. Cover: Lady Gaga...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s5p6.jpg" alt="s5p6">
+                        <a href="#"><p>Soft instrumental Jazz for all your...</p></a>
+                    </div>
+                    <div class="sq-card">
+                        <img class="sq-card-image" src="s5p7.jpg" alt="s5p7">
+                        <a href="#"><p>The biggest songs of the 1980s. Cove...</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="section6">
+                    <div class="menu-list">
+                        <ul>
+                            <p>Company</p>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">For the Record</a></li>
+                        </ul>
+                        <ul>
+                            <p>Communities</p>
+                            <li><a href="#">For Artists</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Vendors</a></li>
+                        </ul>
+                        <ul>
+                            <p>Useful Links</p>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Free Mobile App</a></li>
+                        </ul>
+                        <ul>
+                            <p>Spotify Plans</p>
+                            <li><a href="#">Premium Individual</a></li>
+                            <li><a href="#">Premium Duo</a></li>
+                            <li><a href="#">Premium Family</a></li>
+                            <li><a href="#">Premium Student</a></li>
+                            <li><a href="#">Spotify Free</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-handles">
+                        <a href="https://www.instagram.com/spotify/"><img src="insta-logo.svg" alt="insta-logo"></a>
+                        <a href="https://x.com/spotify"><img src="twitter-logo.svg" alt="twitter-logo"></a>
+                        <a href="https://www.facebook.com/Spotify"><img src="fb-logo.svg" alt="fb-logo"></a>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">© 2024 Spotify AB</p>
+            </div>
+        </div>
+        <div class="playbar">
+            <div class="left-playbar">
+                <img class="music" src="music.svg" alt="music">
+                <div class="song-info">
+                </div>
+            </div>
+            <div class="middle-playbar">
+                <div class="songButtons">
+                    <button class="two">
+                        <img src="previous.svg" id="previous" alt="previous">
+                    </button>
+                    <button id="playit">
+                        <img src="play.svg" id="play" alt="play">
+                    </button>
+                    <button class="two">
+                        <img src="forward.svg" id="forward" alt="forward">
+                    </button>
+                </div>
+                <div class="lower-playbar">
+                    <div class="current-time">00:00</div>
+                    <div class="seekbar">
+                        <!-- <div class="completed"></div> -->
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="song-duration">00:00</div>
+                </div>
+            </div>
+            <div class="right-playbar">
+                <img id="volume" src="volume.svg" alt="volume">
+                <div class="range">
+                    <input type="range" id="range" name="volume">
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
