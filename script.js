@@ -22,7 +22,7 @@ console.log(formatSeconds(3600)); // Output: "60:00"
 
 
 const fetchSongs = async () => {
-    const a = await fetch("http://127.0.0.1:5500/songs");
+    const a = await fetch("https://spotify-alpha-olive.vercel.app/songs");
     const response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response
