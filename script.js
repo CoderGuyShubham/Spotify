@@ -47,6 +47,8 @@ const playMusic = (track, pause = false) => {
     document.querySelector(".song-info").innerHTML = decodeURI(track);
     document.querySelector(".current-time").innerHTML = "00:00";
     document.querySelector(".song-duration").innerHTML = "04:00";
+    console.log("Audio source set to:", currentSongs.src);
+
 };
 const main = async () =>{
     songs = await fetchSongs()
