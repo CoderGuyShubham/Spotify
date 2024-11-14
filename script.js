@@ -38,16 +38,16 @@ const fetchSongs = async () => {
     }
     return songs
 }
-const playMusic = (track,pause=false) =>{
-    currentSongs.src = "/songs/" + track
-    if(!pause){
-        currentSongs.play()
-        play.src = "pause.svg"
+const playMusic = (track, pause = false) => {
+    currentSongs.src = `https://your-vercel-domain.vercel.app/songs/${track}`;
+    if (!pause) {
+        currentSongs.play();
+        play.src = "pause.svg";
     }
-    document.querySelector(".song-info").innerHTML = decodeURI(track)
-    document.querySelector(".current-time").innerHTML = "00:00"
-    document.querySelector(".song-duration").innerHTML = "04:00"
-}
+    document.querySelector(".song-info").innerHTML = decodeURI(track);
+    document.querySelector(".current-time").innerHTML = "00:00";
+    document.querySelector(".song-duration").innerHTML = "04:00";
+};
 const main = async () =>{
     songs = await fetchSongs()
     playMusic(songs[0],true)
@@ -128,5 +128,6 @@ const main = async () =>{
         console.log(e,e.target,e.target.value);
         currentSongs.volume = parseInt(e.target.value)/100
     })
+    
 }
 main()
