@@ -39,7 +39,7 @@ const fetchSongs = async () => {
     return songs
 }
 const playMusic = (track, pause = false) => {
-    currentSongs.src = `https://your-vercel-domain.vercel.app/songs/${track}`;
+    currentSongs.src = `https://spotify-alpha-olive.vercel.app/songs/${track}`;
     if (!pause) {
         currentSongs.play();
         play.src = "pause.svg";
