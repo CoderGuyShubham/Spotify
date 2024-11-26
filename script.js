@@ -15,18 +15,11 @@ function formatSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 
-// Example usage:
-console.log(formatSeconds(12));   // Output: "00:12"
-console.log(formatSeconds(90));   // Output: "01:30"
-console.log(formatSeconds(3600)); // Output: "60:00"
-
-
 const fetchSongs = async () => {
-    const a = await fetch("/songs/");
+    const a = await fetch("/songs");
     const response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response
-    console.log(response);
     
     let as = div.getElementsByTagName("a")
     let songs = []
@@ -42,12 +35,11 @@ const playMusic = (track, pause = false) => {
     currentSongs.src = `/songs/${track}`;
     if (!pause) {
         currentSongs.play();
-        play.src = "pause.svg";
+        play.src = "img/pause.svg";
     }
     document.querySelector(".song-info").innerHTML = decodeURI(track);
     document.querySelector(".current-time").innerHTML = "00:00";
     document.querySelector(".song-duration").innerHTML = "04:00";
-    console.log("Audio source set to:", currentSongs.src);
 
 };
 const main = async () =>{
@@ -57,35 +49,33 @@ const main = async () =>{
     for (const song of songs) {
         songUL.innerHTML = songUL.innerHTML + 
         `<li>
-            <img class="music" src="music.svg" alt="music">
+            <img class="music" src="img/music.svg" alt="music">
             <div class="info">
                 <div>${song.replaceAll("%20"," ")}</div>
                 <div>Shubham</div>
             </div>
             <div class="playnow">
                 <span>Play Now</span>
-                <img id="play-button" src="play-button.svg" alt="play">
+                <img id="play-button" src="img/play-button.svg" alt="play">
             </div>
         </li>`;
     }
     Array.from(document.querySelector(".songLists").getElementsByTagName("li")).forEach(e=>{
         e.addEventListener("click",element=>{
-            console.log(e.querySelector(".info").firstElementChild.innerHTML)
             playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
         })
     })
     playit.addEventListener("click",()=>{
         if(currentSongs.paused){
             currentSongs.play()
-            play.src = "pause.svg"
+            play.src = "img/pause.svg"
         }
         else{
             currentSongs.pause()
-            play.src = "play.svg"
+            play.src = "img/play.svg"
         }
     })
     currentSongs.addEventListener("timeupdate",()=>{
-        console.log(currentSongs.currentTime,currentSongs.duration);
         document.querySelector(".current-time").innerHTML = `${
             formatSeconds(currentSongs.currentTime)
         }`
@@ -97,7 +87,6 @@ const main = async () =>{
     document.querySelector(".seekbar").addEventListener("click",e=>{
         let percent = (e.offsetX/e.target.getBoundingClientRect().width)*100;
         document.querySelector(".circle").style.left = percent + "%";
-        // document.querySelector(".completed").style.width = percent + "%";
         currentSongs.currentTime = (percent/100)*currentSongs.duration;
     })
     document.querySelector("#hamburger").addEventListener("click", () => {
@@ -105,29 +94,26 @@ const main = async () =>{
         
         // Toggle the source of the image between hamburger and cross
         if (hamburgerIcon.src.includes("hamburger.svg")) {
-            hamburgerIcon.src = "cross.svg"; // Change to cross icon
+            hamburgerIcon.src = "img/cross.svg"; // Change to cross icon
             document.querySelector(".left").style.left = 0; // Show menu
         } else {
-            hamburgerIcon.src = "hamburger.svg"; // Change back to hamburger icon
+            hamburgerIcon.src = "img/hamburger.svg"; // Change back to hamburger icon
             document.querySelector(".left").style.left = "-100%"; // Hide menu
         }
     })
     previous.addEventListener("click",()=>{
-        console.log("previous clicked");
         let index = songs.indexOf(currentSongs.src.split("/").slice(-1)[0])
         if((index-1) >= 0){
             playMusic(songs[index-1])
         }
     })
     forward.addEventListener("click",()=>{
-        console.log("forward clicked");
         let index = songs.indexOf(currentSongs.src.split("/").slice(-1)[0])
         if((index+1) < songs.length){
             playMusic(songs[index+1])
         }
     })
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
-        console.log(e,e.target,e.target.value);
         currentSongs.volume = parseInt(e.target.value)/100
     })
     
