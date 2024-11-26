@@ -22,7 +22,7 @@ console.log(formatSeconds(3600)); // Output: "60:00"
 
 
 const fetchSongs = async () => {
-    const a = await fetch("https://spotify-alpha-olive.vercel.app/songs");
+    const a = await fetch("/songs");
     const response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response
@@ -39,7 +39,7 @@ const fetchSongs = async () => {
     return songs
 }
 const playMusic = (track, pause = false) => {
-    currentSongs.src = `https://spotify-alpha-olive.vercel.app/songs/${track}`;
+    currentSongs.src = `/songs/${track}`;
     if (!pause) {
         currentSongs.play();
         play.src = "pause.svg";
