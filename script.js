@@ -22,7 +22,7 @@ console.log(formatSeconds(3600)); // Output: "60:00"
 
 
 const fetchSongs = async () => {
-    const a = await fetch("/songs");
+    const a = await fetch("/songs/");
     const response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response
