@@ -12,20 +12,18 @@
 .navbar{
     width: 100%;
     height: 65px;
-    /* border: 2px solid white; */
     padding: 8px;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
-    /* margin-top: -8px; */
 }
 .logo{
     width: 52px;
     padding-left: 20px;
-    /* margin-top: 8px; */
     cursor: pointer;
 }
 #hamburger{
@@ -43,35 +41,28 @@
     width: 50px;
     height: 50px;
     border: none;
-    /* margin-top: -8px; */
     cursor: pointer;
 }
 .house:hover{
     transform: scale(1.05);
 }
 button i{
-    /* color: white; */
     background-color: transparent;
     font-size: 20px;
 }
 .middle{
     display: flex;
     height: 60px;
-    padding-bottom: 20px;
-    /* justify-content: center; */
     gap: 8px;
     padding-left: 150px;
 }
 .search-input-container{
     width: 470px;
     height: 50px;
-    /* border: 1px solid white; */
     border-radius: 40px;
     background-color: #1f1f1f;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* margin-top: -8px; */
     cursor: pointer;
 }
 .search-input-container:hover{
@@ -107,7 +98,6 @@ input{
     width: 95px;
     height: 48px;
     padding: 8px 32px 8px 8px;
-    /* border: 2px solid white; */
     border: none;
     cursor: pointer;
     font-size: 14px;
@@ -136,7 +126,7 @@ input{
 .left{
     width: 350px;
     margin: 68px 4px 0px 8px;
-    height: 545px;
+    height: 78vh;
     border-radius: 10px;
     background-color: #121212;
     position: fixed;
@@ -187,23 +177,6 @@ input{
     width: 16px;
     background-color: transparent;
 }
-/* .plist-pdcast{
-    height: 270px;
-    overflow-y: scroll;
-    background-color: #121212;
-}
-.playlist{
-    background-color: #1F1F1F;
-    border-radius: 8px;
-    margin: 8px;
-    padding: 18px;
-}
-.podcast{
-    background-color: #1F1F1F;
-    border-radius: 8px;
-    margin: 24px 8px;
-    padding: 18px;
-}*/
 h4{
     mix-blend-mode: difference;
     margin-bottom: 8px;
@@ -215,42 +188,12 @@ p{
     margin-bottom: 20px;
     font-weight: 600;
 }
-/* .create-playlist{
-    width: 130px;
-    border: none;
-    border-radius: 20px;
-    height: 32px;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    font-size: 13px;
-    font-weight: 900;
-}
-.create-playlist:hover{
-    transform: scale(1.05);
-    border: 1px solid white;
-}
-.browse-podcasts{
-    width: 140px;
-    border: none;
-    border-radius: 20px;
-    height: 32px;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    font-size: 13px;
-    font-weight: 900;
-}
-.browse-podcasts:hover{
-    transform: scale(1.05);
-    border: 1px solid white;
-} */
 .songLists{
     background-color: transparent;
 }
 .songLists ul{
     padding: 0px 20px;
-    height: 320px;
+    height: 65vh;
     overflow: scroll;
     background-color: transparent;
 }
@@ -276,7 +219,6 @@ p{
     background-color: transparent;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid; */
 }
 .info div{
     max-width: 150px;     
@@ -285,7 +227,6 @@ p{
     text-overflow: ellipsis; 
 }
 .playnow{
-    /* border: 1px solid; */
     width: 160px;
     background-color: transparent;
     display: flex;
@@ -304,51 +245,11 @@ p{
 #play-button{
     background-color: transparent;
 }
-.menus{
-    padding: 20px 24px;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-}
-.first-three, .last-three{
-    display: flex;
-    margin-bottom: 10px;
-    background-color: transparent;
-    gap: 18px;
-}
 a{
     text-decoration: none;
     font-size: 11px;
     color: #a6a6a6;
     background-color: transparent;
-}
-.big-anchor{
-    font-size: 12px;
-    color: white;
-}
-.big-anchor:hover{
-    text-decoration: underline;
-}
-.language-selector{
-    margin-top: 15px;
-    background-color: transparent;
-    border: 1px solid #a6a6a6;
-    width: 95px;
-    height: 32px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    font-weight: 600;
-}
-.language-selector:hover{
-    transform: scale(1.05);
-    border: 1px solid white;
-    cursor: pointer;
-}
-.globe{
-    width: 16px;
 }
 .main{
     display: flex;
@@ -356,8 +257,7 @@ a{
 .right{
     position: relative;
     border-radius: 10px;
-    /* width: 1160px; */
-    height: 545px;
+    height: 78vh;
     width: calc(100% - 350px);
     margin: 68px 8px 10px 368px;
     background-color: #121212;
@@ -369,12 +269,10 @@ a{
     height: 290px;
     display: flex;
     flex-direction: column;
-    /* border: 2px solid green; */
 }
 .title-section{
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid yellow; */
     margin: 0px 20px 0px 10px;
     background-color: transparent;
 }
@@ -399,7 +297,6 @@ a{
     height: 250px;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid blue; */
 }
 .section4 .card-section{
     padding-top: 15px;
@@ -415,31 +312,15 @@ a{
     width: 160px;
     padding: 10px;
     background-color: transparent;
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
 }
 .card h4:hover,.sq-card h4:hover{
     text-decoration: underline;
 }
-/* .play{
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.play-button{
-    width: 60px;
-    height: 60px;
-    color: green;
-} */
 .card-image{
     width: 140px;
     height: 140px;
-    /* border: 1px solid white; */
     border-radius: 50%;
     margin-bottom: 10px;
     object-fit: cover;
@@ -457,20 +338,15 @@ a{
     width: 160px;
     padding: 10px;
     background-color: transparent;
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
 }
 .sq-card:hover{
     background-color: #1F1F1F;
-    /* border: 1px solid white; */
     border-radius: 6px;
-    /* height: 240px; */
 }
 .sq-card-image{
     width: 140px;
-    /* height: 140px; */
-    /* border: 1px solid white; */
     border-radius: 6px;
     margin-bottom: 10px;
     object-fit: cover;
@@ -485,8 +361,6 @@ a{
 }
 .footer{
     mix-blend-mode: difference;
-    /* display: flex; */
-    /* border-bottom: 1px solid white; */
     padding: 8px 32px;
 }
 .section6{
@@ -520,10 +394,8 @@ a{
 .social-handles{
     display: flex;
     gap: 15px;
-    /* border: 1px solid white; */
 }
 .social-handles a{
-    /* border: 1px solid white; */
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -531,7 +403,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 40px; */
 }
 .social-handles a:hover{
     background-color: #727272;
@@ -541,7 +412,6 @@ a{
     background-color: transparent;
 }
 hr{
-    /* color: #292929; */
     border: 1px solid #474747cb;
     margin: 40px 0px;
 }
@@ -551,7 +421,7 @@ hr{
     color: rgb(200, 200, 200);
 }
 .playbar{
-    height: 85px;
+    height: 12vh;
     width: 100%;
     position: fixed;
     z-index: 5;
@@ -560,8 +430,6 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 10px; */
-    /* border: 2px solid green; */
 }
 .playbar button{
     height: 32px;
@@ -581,13 +449,11 @@ hr{
 #forward, #previous{
     height: 18px;
     background-color: transparent;
-    /* background-color: white; */
 }
 .playbar  button.two{
     background-color: transparent;
 }
 .left-playbar{
-    /* border: 1px solid green; */
     width: 25%;
     padding-left: 20px;
     display: flex;
@@ -599,10 +465,41 @@ hr{
     align-items: center;
     flex-direction: column;
     width: 50%;
-    /* border: 1px solid red; */
+}
+.lower-playbar{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.songButtons{
+    display: flex;
+    gap: 15px;
+}
+
+.seekbar{
+    background-color: #4d4d4d;
+    position: relative;
+    width: 65%;
+    height: 3px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.circle{
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    transition: left 0.5s;
+    top: -5px;
+}
+.current-time, .song-duration{
+    font-size: 12px;
 }
 .right-playbar{
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: flex-end;    
     align-items: center;
@@ -618,67 +515,24 @@ input[type=range]{
 .range{
     height: 30px;
 }
-.lower-playbar{
-    display: flex;
-    width: 100%;
-    gap: 12px;
-    /* border: 1px solid yellow; */
-    justify-content: center;
-    align-items: center;
-}
-.songButtons{
-    display: flex;
-    gap: 15px;
-}
-.seekbar{
-    /* margin-bottom: 8px; */
-    background: #4d4d4d;
-    position: relative;
-    width: 65%;
-    height: 3px;
-    border-radius: 2px;
-    cursor: pointer;
-}
-.completed{
-    height: 100%;
-    width: 0%;
-    background-color: green;
-    transition: width 0.5s;
-}
-.circle{
-    height: 12px;
-    width: 12px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left: 0%;
-    transition: left 0.5s;
-    top: -5px;
-    /* bottom: 0px; */
-}
-.current-time, .song-duration{
-    font-size: 12px;
-}
-@media (max-width:400px){
+@media (max-width:451px){
     .left{
-        /* background-color: red; */
         position: absolute;
         left: -100%;
         z-index: 1;
         transition: all 0.3s;
     }
     .navbar{
-        width: 100px;
+        width: 100vw;
+        background-color: #121212;
         display: flex;
-        flex-direction: row;
     }
     .middle{
         display: flex;
         height: 60px;
         padding-bottom: 20px;
-        /* justify-content: center; */
-        /* gap: 8px; */
         padding-left: 15px;
+        background-color: transparent;
     }
     input{
         height: 25px;
@@ -686,11 +540,13 @@ input[type=range]{
         display: none;
     }
     .login-signup{
-        display: flex;
-        /* width: 200px; */
+        display: none;
     }
     .sign-up{
         padding: 0;
+    }
+    .house{
+        display: none;
     }
     .browse{
         display: none;
@@ -698,6 +554,7 @@ input[type=range]{
     .search-input-container{
         width: 50px;
         height: 50px;
+        background-color: transparent;
     }
     .title-section{
         display: flex;
@@ -707,13 +564,28 @@ input[type=range]{
     .show-all{
         display: none;
     }
+    .songLists ul{
+        height: 60vh;
+    }
     .right{
         position: fixed;
         width: 100vw;
-        margin: 68px 0px 10px 0px;
+        padding-bottom: 150px;
+        margin: 66px 0px 10px 0px;
         border-radius: 0px;
-        height: 75vh;
-        /* overflow-y: scroll; */
+        height: 90vh;
+    }
+    .middle-playbar{
+        background-color: transparent;
+    }
+    .songButtons{
+        background-color: transparent;
+    }
+    .lower-playbar{
+        background-color: transparent;
+    }
+    .current-time, .song-duration{
+        background-color: transparent;
     }
     .right > *{
         width: 100vw;
@@ -721,7 +593,6 @@ input[type=range]{
         margin: 15px 0px 0px 0px;
     }
     .card-section{
-        /* overflow-x: scroll; */
         overflow-y: hidden;
     }
     .footer{
@@ -745,13 +616,14 @@ input[type=range]{
     #hamburger{
         display: block;
         margin-left: 15px;
+        background-color: transparent;
     }
     .logo{
         display: none;
     }
     .playbar{
         height: 18vh;
-        background-color: black;
+        backdrop-filter: blur(8px);
         display: flex;
         gap: 10px;
         justify-content: space-around;
@@ -762,7 +634,11 @@ input[type=range]{
         display: flex;
         padding: 15px 0 0 0;
         justify-content: center;
+        background-color: transparent;
         width: 100vw;
+    }
+    .song-info{
+        background-color: transparent;
     }
     .middle-playbar{
         width: 100vw;
@@ -772,10 +648,12 @@ input[type=range]{
     .right-playbar{
         display: none;
     }
-    
+    .seekbar{
+        background-color: #1DB954;
+    }
 }
 
-@media (max-width: 1250px) and (min-width: 401px) {
+@media (max-width: 1250px) and (min-width: 451px) {
     .left{
         position: absolute;
         left: -100%;
@@ -786,19 +664,21 @@ input[type=range]{
         display: flex;
     }
     .search-input-container{
-        width: 200px;
+        width: 400px;
     }
     input{
-        /* height: 25px; */
         width: 300px;
-        /* display: none; */
+    }
+    .sign-up{
+        display: none;
+    }
+    .playbar{
+        height: 12vh;
     }
     .right{
-        /* background-color: blue; */
         position: fixed;
-        /* left: -360px; */
         width: 98vw;
-        height: 80vh;
+        height: 78vh;
         margin: 68px 0px 10px 10px;
     }
     #hamburger{
@@ -807,5 +687,12 @@ input[type=range]{
     }
     .logo{
         display: none;
+    }
+    .middle{
+        padding: 0;
+    }
+    .search-input-container{
+        width: 32vw;
+        overflow: hidden;
     }
 }  
